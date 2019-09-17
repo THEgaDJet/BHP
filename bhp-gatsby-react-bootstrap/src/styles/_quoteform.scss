@@ -1,0 +1,51 @@
+.row-btn-quote {
+  position: relative;
+  background-color: transparent;
+  height: 0;
+}
+
+.form-quote {
+  background-color: $color-pink;
+  color: white;
+
+  .form-control {
+    background-color: $color-pink;
+    color: white;
+    border-style: none none solid;
+    border-color: white;
+    border-radius: 0;
+  }
+
+  .btn {
+    background-color: $color-pink;
+    color: white;
+    height: $height-button;
+    padding: 10px;
+    border-color: white;
+    border-radius: 0;
+  }
+
+  .btn-primary:focus {
+    box-shadow: none !important;
+  }
+
+  .btn-primary:active {
+    background-color: $color-pink !important;
+    border-color: white !important;
+  }
+
+  .btn-form {
+    border-style: solid;
+    border-color: white;
+    width: 240px;
+  }
+
+  .btn-quote {
+    padding: 10px;
+    border-radius: 0;
+    border-color: $color-pink;
+    position: relative;
+    top: -$height-button;
+    z-index: 1035; // so that it appears over a .fixed-top in _position.scss
+  }
+}

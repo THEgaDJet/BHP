@@ -14,3 +14,20 @@
     width: 680px;
     z-index: 100;
 }
+
+.box-background {
+    background-color: $color-lightgrey-background;
+    width: 50%;
+    height: 345px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.tab-title {
+    font-size: 26px;
+}
+
+.tab-text {
+    font-size: 14px;
+}

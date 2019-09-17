@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import {
     Navbar,
     Nav,
@@ -6,34 +6,27 @@ import {
     Button,
 } from 'react-bootstrap';
 
-const SiteNavBar = ({ siteTitle }) => {
+const SiteNavBar = ({ activeLink='home' }) => {
+    const [open, setOpen] = useState(false);
+
     return (
         <>
-            <Navbar fixed='top' id='site-navbar-overlay' className='site-navbar-overlay' key='header' style={{ padding: 0 }}>
-                <Container style={{ height: '100%' }}>
-                    <div className='ml-auto' style={{ position: 'relative' }}>
-                        <div className='btn-quote text--uppercase btn'>
-                            Book a free quote
-                        </div>
-                    </div>
-                </Container>
-            </Navbar>
             <Navbar fixed='top' id='site-navbar' className='site-navbar' key='header' style={{ padding: 0 }}>
                 <Container style={{ height: '100%' }}>
-                    <Nav>
-                        <Nav.Link className='active'>
+                    <Nav defaultActiveKey='home' activeKey={activeLink}>
+                        <Nav.Link eventKey='home' href='/'>
                             Home
                         </Nav.Link>
-                        <Nav.Link>
+                        <Nav.Link eventKey='about' href='/about'>
                             About
                         </Nav.Link>
-                        <Nav.Link>
-                            Service
+                        <Nav.Link eventKey='services' href='/services'>
+                            Services
                         </Nav.Link>
-                        <Nav.Link>
+                        <Nav.Link eventKey='showcase' href='/showcase'>
                             Showcase
                         </Nav.Link>
-                        <Nav.Link>
+                        <Nav.Link eventKey='contact' href='/contact'>
                             Contact
                         </Nav.Link>
                     </Nav>

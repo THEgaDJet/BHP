@@ -6,7 +6,15 @@ module.exports = {
     author: `Billy Jacoby`,
   },
   plugins: [
-    'gatsby-plugin-root-import',
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: `${__dirname}/src`,
+        components: `${__dirname}/src/components`,
+        images: `${__dirname}/src/images`,
+        styles: `${__dirname}/src/styles`,
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

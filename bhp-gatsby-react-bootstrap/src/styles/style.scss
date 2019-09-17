@@ -6,23 +6,6 @@
 @import "sitenavbar";
 @import "showcase";
 @import "footer";
-
-.background-grey {
-    background-color: $color-darkgrey;
-}
-
-.background-pink {
-    background-color: $color-pink;
-}
-
-.background-color-blue {
-    background-color: $color-blue;
-}
-
-.background-color-white {
-    background-color: white;
-}
-
-.text-color-grey {
-    color: $color-text
-}
+@import "tabsection";
+@import "homebanner";
+@import "quoteform";

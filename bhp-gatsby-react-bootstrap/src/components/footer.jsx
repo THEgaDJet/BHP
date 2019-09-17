@@ -13,7 +13,7 @@ import {
     FaInstagram
 } from 'react-icons/fa'
 
-const SiteFooter = ({ siteTitle }) => {
+const SiteFooter = () => {
     return (
         <>
             <div className='footer-pink background-pink text-dark-background d-flex justify-content-center align-items-center'>

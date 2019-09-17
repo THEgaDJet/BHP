@@ -3,6 +3,7 @@
     top: 48px;
     font-family: 'SF UI Text Light';
     color: $color-site-navbar;
+    background-color: white;
     .navbar-nav {
         .nav-link {
             color: $color-site-navbar;
@@ -26,12 +27,4 @@
     .container {
         align-items: flex-end;
     }
-}
-
-.btn-quote {
-    background-color: $color-pink;
-    color: white;
-    height: $height-button;
-    padding: 10px;
-    border-radius: 0;
 }

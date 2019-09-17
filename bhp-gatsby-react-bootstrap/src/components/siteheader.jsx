@@ -11,7 +11,7 @@ import {
     FaInstagram
 } from 'react-icons/fa'
 
-const SiteHeader = ({ siteTitle }) => {
+const SiteHeader = () => {
     return (
         <>
             <Navbar fixed='top' id='site-header' className='site-header' key='header'>

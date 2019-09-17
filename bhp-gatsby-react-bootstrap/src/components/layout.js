@@ -8,11 +8,12 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import SiteHeader from './siteheader';
-import SiteNavBar from './sitenavbar';
-import SiteFooter from './footer';
+import SiteHeader from 'components/siteheader';
+import SiteNavBar from 'components/sitenavbar';
+import SiteFooter from 'components/footer';
+import QuoteForm from 'components/quoteform';
 
-const Layout = ({ children, pageInfo }) => (
+const Layout = ({ children, pageInfo, activeLink, hasQuoteButton }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -25,40 +26,14 @@ const Layout = ({ children, pageInfo }) => (
     `}
     render={data => (
       <>
-      <SiteHeader></SiteHeader>
-      <SiteNavBar></SiteNavBar>
+      <SiteHeader />
+      <SiteNavBar activeLink={activeLink} />
       <div style={{ position: 'relative', top: '128px' }}>
+        <QuoteForm hasCollapse={hasQuoteButton} />
+
         {children}
         <SiteFooter></SiteFooter>
       </div>
-        {/* <Container fluid className="px-0 main">
-          <Row noGutters className="justify-content-center">
-            <Col>
-              <Header siteTitle={data.site.siteMetadata.title} />
-            </Col>
-          </Row>
-          <Navbar pageInfo={pageInfo} />
-          <Row noGutters>
-            <Col>
-              <Container className="mt-5">
-                <main>{children}</main>
-              </Container>
-            </Col>
-          </Row>
-        </Container>
-        <Container fluid className="px-0">
-          <Row noGutters>
-            <Col className="footer-col">
-              <footer>
-                <span>
-                  © {new Date().getFullYear()}, Built with
-                  {` `}
-                  <a href="https://www.gatsbyjs.org">Gatsby</a>
-                </span>
-              </footer>
-            </Col>
-          </Row>
-        </Container> */}
       </>
     )}
   />

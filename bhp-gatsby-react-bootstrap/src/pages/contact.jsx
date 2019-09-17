@@ -1,12 +1,12 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "components/layout";
+import SEO from "components/seo";
+import QuoteForm from "components/quoteform";
 
 const ContactPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>CONTACT</h1>
+  <Layout pageInfo={{ pageName: "contact" }} activeLink="contact" hasQuoteButton={false}>
+    <SEO title="Contact" />
   </Layout>
 )
 

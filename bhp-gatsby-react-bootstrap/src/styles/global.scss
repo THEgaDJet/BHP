@@ -1,0 +1,111 @@
+@import "fonts/SFUIDisplay.css";
+@import "fonts/SFUIText.css";
+@import "variables";
+
+.page-row {
+    height: 495px;
+    color: white;
+}
+
+.btn-group .combo-box-textarea {
+    flex-grow: 8;
+}
+
+// backgrounds
+.background-grey {
+    background-color: $color-darkgrey;
+}
+
+.background-pink {
+    background-color: $color-pink;
+}
+
+.background-color-blue {
+    background-color: $color-blue;
+}
+
+.background-color-white {
+    background-color: white;
+}
+
+// text
+input::-webkit-input-placeholder {
+    color: white !important;
+    opacity: 0.3 !important;
+}
+input::-moz-placeholder {
+    color: white !important;
+    opacity: 0.3 !important;
+}
+input:-moz-placeholder { /* Older versions of Firefox */
+    color: white !important;
+    opacity: 0.3 !important;
+}
+input:-ms-input-placeholder {
+    color: white !important;
+    opacity: 0.3 !important;
+}
+
+.text-color-grey {
+    color: $color-text
+}
+
+.text-dark-background {
+    color: white;
+    font-family: 'SF UI Text Regular';
+}
+
+.text-light-background {
+    font-family: 'SF UI Text Light';    
+}
+
+form {
+    .valid {
+        background: url('../images/components/white-check.png');
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 20px 20px;
+    }
+}
+
+form {
+    > input[type="text"],
+    > input[type="email"],
+    > input[type="password"] {
+    
+        // show success!
+        &:valid {
+            background: url('../images/components/white-check.png');
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: 20px 20px;
+        }
+        &:invalid {
+            background: url('../images/components/white-check.png');
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: 20px 20px;
+
+            // // continue to hide the label
+            // & + label {
+            // opacity: 0;
+            // }
+        }
+    }
+}
+
+// positioning
+.pos-abs-0 {
+    position: absolute;
+    top: 0;
+}
+
+.pos-rel-0 {
+    position: relative;
+    top: 0;
+}
+
+// padding and margins
+.padding-0 {
+    padding: 0;
+}
