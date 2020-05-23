@@ -30,9 +30,8 @@ const Layout = ({ children, pageInfo, activeLink, hasQuoteButton }) => (
       <SiteNavBar activeLink={activeLink} />
       <div style={{ position: 'relative', top: '128px' }}>
         <QuoteForm hasCollapse={hasQuoteButton} />
-
         {children}
-        <SiteFooter></SiteFooter>
+        <SiteFooter />
       </div>
       </>
     )}

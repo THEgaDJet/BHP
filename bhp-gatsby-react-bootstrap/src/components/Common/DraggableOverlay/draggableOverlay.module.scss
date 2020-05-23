@@ -1,0 +1,39 @@
+.draggable-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 302px;
+    width: 100%;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        -o-object-fit: 'cover';
+    }
+    .image-reveal {
+        position: relative;
+    }
+    .image-draggable {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .draggable-wiper {
+        width: 51px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .drag-handle {
+        width: 51px;
+        height: 51px;
+        background: rgba($color: white, $alpha: 0.5);
+        border-radius: 50%;
+        border: 2px solid rgba($color: white, $alpha: 1.0);
+        backdrop-filter: blur(4px);
+        transform: translateX(-50%);
+        cursor: move;
+    }
+}
+
+

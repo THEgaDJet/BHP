@@ -1,0 +1,27 @@
+.case-study-row {
+    height: 800px;
+    background-color: #F6F6F6;
+}
+
+.top-margin {
+    margin-top: 85px;
+}
+
+.image-col {
+    margin-top: 70px;
+    position: relative;
+    height: 490px;
+}
+
+.case-study-image {
+    object-fit: cover;
+    object-position: center;
+}
+
+.hide-on-mobile {
+    display: block;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

@@ -4,12 +4,7 @@ import {
     Nav,
     Container,
 } from 'react-bootstrap';
-import { IconContext } from "react-icons";
-import {
-    FaFacebookF,
-    FaTwitter,
-    FaInstagram
-} from 'react-icons/fa'
+import SocialMedia from 'components/Common/SocialMedia/socialMedia';
 
 const SiteHeader = () => {
     return (
@@ -24,17 +19,7 @@ const SiteHeader = () => {
                         <Navbar.Text className='mr-5'>
                             +44 7394729479
                         </Navbar.Text>
-                        <IconContext.Provider value={{ color: "white", style: { verticalAlign: 'middle' } }}>
-                            <Nav.Link className='p-2'>
-                                    <FaFacebookF />
-                            </Nav.Link>
-                            <Nav.Item className='p-2'>
-                                    <FaTwitter />
-                            </Nav.Item>
-                            <Nav.Item className='p-2'>
-                                <FaInstagram />
-                            </Nav.Item>
-                        </IconContext.Provider>
+                        <SocialMedia />
                     </Nav>
                 </Container>
             </Navbar>

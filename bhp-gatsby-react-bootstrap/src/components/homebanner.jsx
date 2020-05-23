@@ -12,6 +12,7 @@ import {
     FaTwitter,
     FaInstagram
 } from 'react-icons/fa'
+import SocialMedia from "./Common/SocialMedia/socialMedia";
 
 // import BannerBackground from 'images/home/Image 491.png'
 
@@ -22,17 +23,7 @@ const SiteHeader = ({activeLink}) => {
             <Row>
                     <Col>
                         <Nav>
-                            <IconContext.Provider value={{ color: "white", style: { verticalAlign: 'middle' } }}>
-                                <Nav.Link className='p-2'>
-                                        <FaFacebookF />
-                                </Nav.Link>
-                                <Nav.Item className='p-2'>
-                                        <FaTwitter />
-                                </Nav.Item>
-                                <Nav.Item className='p-2'>
-                                    <FaInstagram />
-                                </Nav.Item>
-                            </IconContext.Provider>
+                            <SocialMedia />
                         </Nav>
                     </Col>
                 </Row>
