@@ -12,13 +12,13 @@ const SiteNavBar = ({ activeLink='home' }) => {
 
     return (
         <>
-        <Container style={{ height: '100%' }}>
-                <Row>
-                    <Col xs={7}>
-            <Navbar fixed='top' id='site-navbar' className='site-navbar' key='header' style={{ padding: 0 }}>
+        <Container fluid style={{ height: '100%' }}>
+                <Row className='justify-content-center'>
+                    <Col xs={7} className='p-0'>
+            {/* <Navbar fixed='top' id='site-navbar' className='site-navbar p-0' key='header'> */}
                 
-                        <Nav defaultActiveKey='home' activeKey={activeLink}>
-                            <Nav.Link eventKey='home' href='/'>
+                        <Nav defaultActiveKey='home' activeKey={activeLink} id='site-navbar' className='site-navbar p-0'>
+                            <Nav.Link className='pl-0' eventKey='home' href='/'>
                                 Home
                             </Nav.Link>
                             <Nav.Link eventKey='about' href='/about'>
@@ -34,7 +34,7 @@ const SiteNavBar = ({ activeLink='home' }) => {
                                 Contact
                             </Nav.Link>
                         </Nav>
-            </Navbar>
+            {/* </Navbar> */}
             </Col>
                     </Row>
                 </Container>

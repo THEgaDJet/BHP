@@ -11,7 +11,7 @@ import SEO from "components/seo";
 import TopSection from "components/topsection";
 import TabSection from "components/tabsection";
 
-const IndexPage = () => (
+const ShowcasePage = () => (
     <>
         <Layout pageInfo={{ pageName: 'showcase'}} activeLink='showcase' >
             <SEO title="Showcase" keywords={[`gardening`]} />
@@ -27,4 +27,4 @@ const IndexPage = () => (
     </>
 )
 
-export default IndexPage
+export default ShowcasePage
